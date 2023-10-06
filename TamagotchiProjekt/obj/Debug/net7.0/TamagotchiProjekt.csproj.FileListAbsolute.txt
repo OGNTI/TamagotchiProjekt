@@ -1,0 +1,14 @@
+C:\Users\oliver.granudden\Documents\Master Folder\VisualStudioCodeThings\Programmering\TamagotchiProjekt\TamagotchiProjekt\bin\Debug\net7.0\TamagotchiProjekt.exe
+C:\Users\oliver.granudden\Documents\Master Folder\VisualStudioCodeThings\Programmering\TamagotchiProjekt\TamagotchiProjekt\bin\Debug\net7.0\TamagotchiProjekt.deps.json
+C:\Users\oliver.granudden\Documents\Master Folder\VisualStudioCodeThings\Programmering\TamagotchiProjekt\TamagotchiProjekt\bin\Debug\net7.0\TamagotchiProjekt.runtimeconfig.json
+C:\Users\oliver.granudden\Documents\Master Folder\VisualStudioCodeThings\Programmering\TamagotchiProjekt\TamagotchiProjekt\bin\Debug\net7.0\TamagotchiProjekt.dll
+C:\Users\oliver.granudden\Documents\Master Folder\VisualStudioCodeThings\Programmering\TamagotchiProjekt\TamagotchiProjekt\bin\Debug\net7.0\TamagotchiProjekt.pdb
+C:\Users\oliver.granudden\Documents\Master Folder\VisualStudioCodeThings\Programmering\TamagotchiProjekt\TamagotchiProjekt\obj\Debug\net7.0\TamagotchiProjekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oliver.granudden\Documents\Master Folder\VisualStudioCodeThings\Programmering\TamagotchiProjekt\TamagotchiProjekt\obj\Debug\net7.0\TamagotchiProjekt.AssemblyInfoInputs.cache
+C:\Users\oliver.granudden\Documents\Master Folder\VisualStudioCodeThings\Programmering\TamagotchiProjekt\TamagotchiProjekt\obj\Debug\net7.0\TamagotchiProjekt.AssemblyInfo.cs
+C:\Users\oliver.granudden\Documents\Master Folder\VisualStudioCodeThings\Programmering\TamagotchiProjekt\TamagotchiProjekt\obj\Debug\net7.0\TamagotchiProjekt.csproj.CoreCompileInputs.cache
+C:\Users\oliver.granudden\Documents\Master Folder\VisualStudioCodeThings\Programmering\TamagotchiProjekt\TamagotchiProjekt\obj\Debug\net7.0\TamagotchiProjekt.dll
+C:\Users\oliver.granudden\Documents\Master Folder\VisualStudioCodeThings\Programmering\TamagotchiProjekt\TamagotchiProjekt\obj\Debug\net7.0\refint\TamagotchiProjekt.dll
+C:\Users\oliver.granudden\Documents\Master Folder\VisualStudioCodeThings\Programmering\TamagotchiProjekt\TamagotchiProjekt\obj\Debug\net7.0\TamagotchiProjekt.pdb
+C:\Users\oliver.granudden\Documents\Master Folder\VisualStudioCodeThings\Programmering\TamagotchiProjekt\TamagotchiProjekt\obj\Debug\net7.0\TamagotchiProjekt.genruntimeconfig.cache
+C:\Users\oliver.granudden\Documents\Master Folder\VisualStudioCodeThings\Programmering\TamagotchiProjekt\TamagotchiProjekt\obj\Debug\net7.0\ref\TamagotchiProjekt.dll
