@@ -4,13 +4,26 @@ public class Tamagotchi
     int hunger;
     int boredom;
     List<string> words = new();
-    bool isAlive = true;
+    bool isAlive;
     Random generator = new();
     public string name;
+    public string nameID;
+    public bool firstRound = false;
+
+    public void Name(string input)
+    {
+        nameID = input.ToLower();
+        name = input.ToLower();
+        if (name.Length >= 2) //if string has enough characters for command below
+        {
+            name = char.ToUpper(name[0]) + name.Substring(1); //Capitalize first letter then add rest of string
+        }
+        isAlive = true;
+    }
 
     public void Feed()
     {
-        List<string> food = new() { "2an apple", "0an old sock", "3half a hamburger", "1a single french fry", "1paper towels", "4a live pig", "0pocket lint", "0a food coupon", "5six pizzas", "2a loaf of bread", "3a handful of apples"}; //list of possible food
+        List<string> food = new() { "2an apple", "0an old sock", "3half a hamburger", "1a single french fry", "1paper towels", "4a live pig", "0pocket lint", "0a food coupon", "5six pizzas", "2a loaf of bread", "3a handful of apples" }; //list of possible food
         int index = generator.Next(food.Count); //get one food from list
         int.TryParse(food[index][0].ToString(), out int foodIndex); //get the first character from food, which is how much hunger it satisfies, and convert to int
         Console.WriteLine($"You gave {name} {food[index].Substring(1)} and {name} ate it like they haven't eaten in 8 years. [satisfied {foodIndex} hunger]");
@@ -42,26 +55,29 @@ public class Tamagotchi
 
     public void Tick()
     {
-        hunger++;
-        boredom++;
+        if (GetAlive() && !firstRound)
+        {
+            hunger++;
+            boredom++;
 
-        if (hunger > 10 || boredom > 10)
-        {
-            isAlive = false;
-        }
-        if (hunger < 0)
-        {
-            hunger = 0;
-        }
-        if (boredom < 0)
-        {
-            boredom = 0;
+            if (hunger > 10 || boredom > 10)
+            {
+                isAlive = false;
+            }
+            if (hunger < 0)
+            {
+                hunger = 0;
+            }
+            if (boredom < 0)
+            {
+                boredom = 0;
+            }
         }
     }
 
     public void PrintStats()
     {
-        Console.WriteLine($"\nHunger: {hunger}\nBoredom: {boredom}");
+        Console.WriteLine();
         if (isAlive == true)
         {
             Console.WriteLine($"{name} is alive.");
@@ -81,6 +97,7 @@ public class Tamagotchi
                 Console.WriteLine($"{name} died from boredom, lol.");
             }
         }
+        Console.WriteLine($"Hunger: {hunger}\nBoredom: {boredom}");
     }
 
     public bool GetAlive()
