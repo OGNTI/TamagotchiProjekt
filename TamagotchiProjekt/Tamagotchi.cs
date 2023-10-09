@@ -10,11 +10,11 @@ public class Tamagotchi
 
     public void Feed()
     {
-        List<string> food = new() {"2an apple", "0an old sock", "3half a hamburger", "1a single french fry", "1paper towels", "4a live pig", "0pocket lint", "0a food coupon", "5six pizzas", "2a loaf of bread"}; //list of possible food
+        List<string> food = new() { "2an apple", "0an old sock", "3half a hamburger", "1a single french fry", "1paper towels", "4a live pig", "0pocket lint", "0a food coupon", "5six pizzas", "2a loaf of bread", "3a handful of apples"}; //list of possible food
         int index = generator.Next(food.Count); //get one food from list
         int.TryParse(food[index][0].ToString(), out int foodIndex); //get the first character from food, which is how much hunger it satisfies, and convert to int
-        Console.WriteLine($"You gave {name} {food[index].Substring(1)} and {name} ate it like they haven't eaten in 8 years.");
-        hunger -= foodIndex; 
+        Console.WriteLine($"You gave {name} {food[index].Substring(1)} and {name} ate it like they haven't eaten in 8 years. [satisfied {foodIndex} hunger]");
+        hunger -= foodIndex;
     }
 
     public void Hi()
@@ -25,9 +25,9 @@ public class Tamagotchi
             Console.WriteLine($"{name} says {words[index]}.");
             ReduceBoredom();
         }
-        else 
+        else
         {
-            Console.WriteLine($"{name} does not know any words to greet you with so {name} just gives you the finger."); 
+            Console.WriteLine($"{name} does not know any words to greet you with so {name} just gives you the finger.");
         }
     }
 
