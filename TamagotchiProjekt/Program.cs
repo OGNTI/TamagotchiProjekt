@@ -8,10 +8,7 @@ string input = Console.ReadLine().ToLower();
 
 if (input == "yes")
 {
-    Console.WriteLine("What is your unpaid interns name?");
-    input = Console.ReadLine();
-    Interns.Add(new Tamagotchi());
-    Interns[internIndex].Name(input);
+    HireIntern();
     gaming = true;
 }
 else
